@@ -1,4 +1,4 @@
-var CardTypesModifier =
+var CARD_TYPES_MODIFIER =
 {
     BLESS:  "bless",
     CURSE:  "curse",
@@ -6,21 +6,21 @@ var CardTypesModifier =
     PLUS1:  "plus1",
     PLUS2:  "plus2",
     MINUS1: "minus1",
-    MINUS2: "minus2",
     NULL:   "null",
-    DOUBLE: "double"
+    DOUBLE: "double",
+    LEAF: "leaf"
 };
 
 var MODIFIER_CARDS =
-    { BLESS:  { 'type': CardTypesModifier.BLESS,  'shuffle': false, 'image': 'images/attack_mod_bless.jpg' }
-    , CURSE:  { 'type': CardTypesModifier.CURSE,  'shuffle': false, 'image': 'images/attack_mod_curse.jpg' }
-    , PLUS0:  { 'type': CardTypesModifier.PLUS0,  'shuffle': false, 'image': 'images/attack_mod_+0.jpg' }
-    , PLUS1:  { 'type': CardTypesModifier.PLUS1,  'shuffle': false, 'image': 'images/attack_mod_+1.jpg' }
-    , PLUS2:  { 'type': CardTypesModifier.PLUS2,  'shuffle': false, 'image': 'images/attack_mod_+2.jpg' }
-    , MINUS1: { 'type': CardTypesModifier.MINUS1, 'shuffle': false, 'image': 'images/attack_mod_-1.jpg' }
-    , MINUS2: { 'type': CardTypesModifier.MINUS2, 'shuffle': false, 'image': 'images/attack_mod_-2.jpg' }
-    , NULL:   { 'type': CardTypesModifier.NULL,   'shuffle': false, 'image': 'images/attack_mod_null.jpg' }
-    , DOUBLE: { 'type': CardTypesModifier.DOUBLE, 'shuffle': false, 'image': 'images/attack_mod_2x.jpg' }
+    { BLESS:  { 'type': CARD_TYPES_MODIFIER.BLESS,  'shuffle': false, 'image': 'images/attack_mod_bless.jpg' }
+    , CURSE:  { 'type': CARD_TYPES_MODIFIER.CURSE,  'shuffle': false, 'image': 'images/attack_mod_curse.jpg' }
+    , PLUS0:  { 'type': CARD_TYPES_MODIFIER.PLUS0,  'shuffle': false, 'image': 'images/attack_mod_+0.jpg' }
+    , PLUS1:  { 'type': CARD_TYPES_MODIFIER.PLUS1,  'shuffle': false, 'image': 'images/attack_mod_+1.jpg' }
+    , PLUS2:  { 'type': CARD_TYPES_MODIFIER.PLUS2,  'shuffle': false, 'image': 'images/attack_mod_+2.jpg' }
+    , MINUS1: { 'type': CARD_TYPES_MODIFIER.MINUS1, 'shuffle': false, 'image': 'images/attack_mod_-1.jpg' }
+    , NULL:   { 'type': CARD_TYPES_MODIFIER.NULL,   'shuffle': true,  'image': 'images/attack_mod_null.jpg' }
+    , DOUBLE: { 'type': CARD_TYPES_MODIFIER.DOUBLE, 'shuffle': true,  'image': 'images/attack_mod_2x.jpg' }
+    , LEAF: { 'type': CARD_TYPES_MODIFIER.LEAF, 'shuffle': false,  'image': 'images/attack_mod_plus1leaf.jpg' }
     };
 
 var MODIFIER_DECK =
@@ -41,8 +41,8 @@ var MODIFIER_DECK =
     , MODIFIER_CARDS.MINUS1,
     , MODIFIER_CARDS.MINUS1,
     , MODIFIER_CARDS.PLUS2,
-    , MODIFIER_CARDS.MINUS2,
     , MODIFIER_CARDS.NULL,
     , MODIFIER_CARDS.DOUBLE,
+    , MODIFIER_CARDS.LEAF,
     ];
 
