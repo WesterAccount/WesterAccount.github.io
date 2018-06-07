@@ -8,7 +8,10 @@ var CARD_TYPES_MODIFIER =
     MINUS1: "minus1",
     NULL:   "null",
     DOUBLE: "double",
-    LEAF: "leaf"
+    LEAF: "leaf",
+    WIND: "wind",
+    DARK: "dark",
+    HEAL: "heal"
 };
 
 var MODIFIER_CARDS =
@@ -21,27 +24,30 @@ var MODIFIER_CARDS =
     , NULL:   { 'type': CARD_TYPES_MODIFIER.NULL,   'shuffle': true,  'image': 'images/attack_mod_null.jpg' }
     , DOUBLE: { 'type': CARD_TYPES_MODIFIER.DOUBLE, 'shuffle': true,  'image': 'images/attack_mod_2x.jpg' }
     , LEAF: { 'type': CARD_TYPES_MODIFIER.LEAF, 'shuffle': false,  'image': 'images/attack_mod_plus1leaf.jpg' }
+    , WIND: { 'type': CARD_TYPES_MODIFIER.WIND, 'shuffle': false,  'image': 'images/attack_mod_plus1wind.jpg' }
+    , DARK: { 'type': CARD_TYPES_MODIFIER.DARK, 'shuffle': false,  'image': 'images/attack_mod_plus1dark.jpg' }
+    , HEAL: { 'type': CARD_TYPES_MODIFIER.HEAL, 'shuffle': false,  'image': 'images/attack_mod_heal1.jpg' }
     };
 
 var MODIFIER_DECK =
     [ MODIFIER_CARDS.PLUS0,
     , MODIFIER_CARDS.PLUS0,
-    , MODIFIER_CARDS.PLUS0,
-    , MODIFIER_CARDS.PLUS0,
-    , MODIFIER_CARDS.PLUS0,
-    , MODIFIER_CARDS.PLUS0,
     , MODIFIER_CARDS.PLUS1,
     , MODIFIER_CARDS.PLUS1,
     , MODIFIER_CARDS.PLUS1,
     , MODIFIER_CARDS.PLUS1,
     , MODIFIER_CARDS.PLUS1,
-    , MODIFIER_CARDS.MINUS1,
-    , MODIFIER_CARDS.MINUS1,
-    , MODIFIER_CARDS.MINUS1,
-    , MODIFIER_CARDS.MINUS1,
+    , MODIFIER_CARDS.PLUS1,
+    , MODIFIER_CARDS.PLUS1,
     , MODIFIER_CARDS.MINUS1,
     , MODIFIER_CARDS.PLUS2,
     , MODIFIER_CARDS.NULL,
     , MODIFIER_CARDS.DOUBLE,
     , MODIFIER_CARDS.LEAF,
+    , MODIFIER_CARDS.WIND,
+    , MODIFIER_CARDS.DARK,
+    , MODIFIER_CARDS.HEAL,
+    , MODIFIER_CARDS.HEAL,
+    , MODIFIER_CARDS.HEAL,
+    , MODIFIER_CARDS.HEAL,
     ];
