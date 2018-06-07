@@ -8,7 +8,7 @@ var CARD_TYPES_MODIFIER =
     MINUS1: "minus1",
     MINUS2: "minus2",
     NULL:   "null",
-    DOUBLE: "double"
+    DOUBLE: "double",
     LEAF: "leaf"
 };
 
@@ -46,5 +46,5 @@ var MODIFIER_DECK =
     , MODIFIER_CARDS.MINUS2,
     , MODIFIER_CARDS.NULL,
     , MODIFIER_CARDS.DOUBLE,
-    , MODIFIER_CARDS.LEAF
+    , MODIFIER_CARDS.LEAF,
     ];
