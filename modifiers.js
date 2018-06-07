@@ -11,7 +11,11 @@ var CARD_TYPES_MODIFIER =
     LEAF: "leaf",
     WIND: "wind",
     DARK: "dark",
-    HEAL: "heal"
+    HEAL: "heal",
+    LIGHT: "light",
+    POISON: "poison",
+    MUDDLE: "muddle",
+    WOUND: "wound",
 };
 
 var MODIFIER_CARDS =
@@ -27,6 +31,10 @@ var MODIFIER_CARDS =
     , WIND: { 'type': CARD_TYPES_MODIFIER.WIND, 'shuffle': false,  'image': 'images/attack_mod_plus1wind.jpg' }
     , DARK: { 'type': CARD_TYPES_MODIFIER.DARK, 'shuffle': false,  'image': 'images/attack_mod_plus1dark.jpg' }
     , HEAL: { 'type': CARD_TYPES_MODIFIER.HEAL, 'shuffle': false,  'image': 'images/attack_mod_heal1.jpg' }
+    , LIGHT: { 'type': CARD_TYPES_MODIFIER.LIGHT, 'shuffle': false,  'image': 'images/attack_mod_plus1light.jpg' }
+    , POISON: { 'type': CARD_TYPES_MODIFIER.POISON, 'shuffle': false,  'image': 'images/attack_mod_poison.jpg' }
+    , MUDDLE: { 'type': CARD_TYPES_MODIFIER.MUDDLE, 'shuffle': false,  'image': 'images/attack_mod_muddle.jpg' }
+    , WOUND: { 'type': CARD_TYPES_MODIFIER.WOUND, 'shuffle': false,  'image': 'images/attack_mod_wound.jpg' }
     };
 
 var MODIFIER_DECK =
@@ -50,4 +58,7 @@ var MODIFIER_DECK =
     , MODIFIER_CARDS.HEAL,
     , MODIFIER_CARDS.HEAL,
     , MODIFIER_CARDS.HEAL,
+    , MODIFIER_CARDS.MUDDLE,
+    , MODIFIER_CARDS.POISON,
+    , MODIFIER_CARDS.LIGHT,
     ];
