@@ -9,6 +9,7 @@ var CARD_TYPES_MODIFIER =
     MINUS2: "minus2",
     NULL:   "null",
     DOUBLE: "double"
+    LEAF: "leaf"
 };
 
 var MODIFIER_CARDS =
@@ -21,6 +22,7 @@ var MODIFIER_CARDS =
     , MINUS2: { 'type': CARD_TYPES_MODIFIER.MINUS2, 'shuffle': false, 'image': 'images/attack_mod_-2.jpg' }
     , NULL:   { 'type': CARD_TYPES_MODIFIER.NULL,   'shuffle': true,  'image': 'images/attack_mod_null.jpg' }
     , DOUBLE: { 'type': CARD_TYPES_MODIFIER.DOUBLE, 'shuffle': true,  'image': 'images/attack_mod_2x.jpg' }
+    , LEAF: { 'type': CARD_TYPES_MODIFIER.LEAF, 'shuffle': false,  'image': 'images/attack_mod_plus1leaf.jpg' }
     };
 
 var MODIFIER_DECK =
@@ -44,4 +46,5 @@ var MODIFIER_DECK =
     , MODIFIER_CARDS.MINUS2,
     , MODIFIER_CARDS.NULL,
     , MODIFIER_CARDS.DOUBLE,
+    , MODIFIER_CARDS.LEAF
     ];
